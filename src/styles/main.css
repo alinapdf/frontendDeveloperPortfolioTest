@@ -1,0 +1,277 @@
+@import "./reset.css";
+
+@font-face {
+  font-family: "DM-Sans-Bold";
+  src: url("./../fonts/DMSans_18pt-Bold.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "DM-Sans-Medium";
+  src: url("./../fonts/DMSans-Medium.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "DM-Sans-Regular";
+  src: url("./../fonts/DMSans-Regular.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./../fonts/Poppins-Bold.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("./../fonts/Poppins-Medium.ttf") format(truetype);
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("./../fonts/Poppins-Regular.ttf") format(truetype);
+}
+
+:root {
+  --black: #171718;
+  --black-border: #26292d;
+  --white: #fff;
+  --purple: #5c62ec;
+
+  --dark-bg: var(--black);
+  --dark-border: var(--black-border);
+  --header-text: var(--white);
+  --accent: var(--purple);
+
+  /* light */
+  --page-bg: var(--white);
+  --text-color: var(--black);
+  --color-outline: var(--black);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+html,
+body {
+  font-family: "DM-Sans-bold", sans-serif;
+  min-height: 100vh;
+
+  /* light mode */
+  background-color: var(--page-bg);
+  color: var(--black);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
+  /* dark */
+  background-color: var(--black);
+  color: var(--white);
+  --color-outline: var(--white);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 1);
+}
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* general */
+
+.section {
+  padding: 70px 0;
+}
+
+.title-1 {
+  margin-bottom: 60px;
+  text-align: center;
+
+  font-size: 60px;
+  font-family: "DM-Sans-Bold";
+  color: var(--accent);
+}
+
+/* projects */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+/* project details */
+
+.project-details {
+  max-width: 865px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-details-img {
+  max-width: 100%;
+  margin-bottom: 40px;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.project-details-desc {
+  /* color: var(--black); */
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.project-details-desc p + p {
+  margin-top: 1rem;
+}
+
+/* skills */
+
+.title-2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content-list {
+  max-width: 571px;
+  margin: 0 auto;
+}
+
+.content-list-item-text {
+  font-family: "DM-Sans-Regular", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+.content-list-item-text p + p {
+  margin-top: 0.5em;
+}
+
+.content-list-item {
+  margin-bottom: 40px;
+}
+
+.content-list-item:last-child {
+  margin-bottom: 0;
+}
+
+/* contacts */
+
+.content-list-item-text a {
+  color: var(--accent);
+}
+
+/* body.dark {
+  dark
+  background-color: var(--black);
+  color: red;
+} */
+
+@media (max-width: 620px) {
+  /* nav */
+  .nav-row {
+    justify-content: space-between;
+  }
+
+  .dark-mode-btn {
+    order: 0;
+  }
+  /* header */
+
+  .header {
+    min-height: unset;
+  }
+
+  .header-wrapper {
+    padding: 0;
+  }
+  .header-title {
+    font-size: 30px;
+  }
+
+  .header-title strong {
+    font-size: 40px;
+  }
+
+  /* main */
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .title-1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .projects-list {
+    justify-content: center;
+  }
+
+  .project-title {
+    font-size: 15px;
+    padding: 15px 0 15px 20px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .social-item {
+    width: 20px;
+    margin-right: 15px;
+  }
+
+  .social {
+    margin-bottom: 19px;
+  }
+
+  .copyrights {
+    font-size: 12px;
+  }
+
+  /* sections */
+
+  .title-2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .content-list-item {
+    margin-bottom: 20px;
+  }
+
+  .content-list-item-text {
+    font-size: 14px;
+  }
+
+  .project-details-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-title {
+    font-size: 20px;
+  }
+
+  .header-title strong {
+    font-size: 30px;
+  }
+}
+
+.display-none {
+  display: none;
+}

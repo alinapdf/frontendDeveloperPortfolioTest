@@ -1,0 +1,21 @@
+.projects-list-item {
+  max-width: 370px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.projects-list-item:hover {
+  transform: translateY(-20px);
+}
+
+.project-img {
+  border-radius: 10px;
+}
+
+.project-title {
+  color: var(--black);
+  padding: 15px 0 25px 20px;
+  font-size: 24px;
+}

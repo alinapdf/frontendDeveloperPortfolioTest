@@ -1,0 +1,63 @@
+/* header */
+
+.header {
+  min-height: 685px;
+  padding: 40px 0;
+  background-color: var(--dark-bg);
+  color: var(--header-text);
+}
+
+.header-wrapper {
+  margin-top: 40px;
+  max-width: 640px;
+  text-align: center;
+  background-image: url("../../img/Abstract.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  padding: 147px 0 223px;
+}
+
+.header-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.header-title strong {
+  font-size: 60px;
+}
+
+.header-title strong span {
+  color: var(--accent);
+}
+
+.header-text p {
+  font-family: "DM-Sans-Medium", sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.header-text p + p {
+  margin-top: 1em;
+}
+
+/* btn */
+
+.header-btn {
+  color: var(--white);
+  font-family: "DM-Sans-Medium", sans-serif;
+  padding: 12px 28px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--accent);
+  transition: all 0.5s ease;
+}
+
+.header-btn:hover {
+  opacity: 0.8;
+}
+
+.header-btn:active {
+  position: relative;
+  top: 1px;
+}

@@ -1,0 +1,33 @@
+/* footer */
+
+.footer {
+  margin-top: auto;
+  background-color: var(--black);
+  padding: 60px 0 50px;
+  color: var(--white);
+  font-family: "DM-Sans-Regular", sans-serif;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 310px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.social-item {
+  margin-right: 30px;
+}
+
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.copyrights p + p {
+  margin-top: 0.5em;
+}

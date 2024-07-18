@@ -1,0 +1,9 @@
+.btn-outline {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--color-outline);
+}
+
+.btn-outline img {
+  margin-right: 10px;
+}
